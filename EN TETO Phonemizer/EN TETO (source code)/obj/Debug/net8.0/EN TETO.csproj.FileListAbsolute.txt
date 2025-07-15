@@ -1,0 +1,20 @@
+D:\OpenUtau\EN TETO\bin\Debug\net8.0\Melanchall_DryWetMidi_Native32.dll
+D:\OpenUtau\EN TETO\bin\Debug\net8.0\Melanchall_DryWetMidi_Native64.dll
+D:\OpenUtau\EN TETO\bin\Debug\net8.0\Melanchall_DryWetMidi_Native64.dylib
+D:\OpenUtau\EN TETO\bin\Debug\net8.0\EN TETO.deps.json
+D:\OpenUtau\EN TETO\bin\Debug\net8.0\EN TETO.dll
+D:\OpenUtau\EN TETO\bin\Debug\net8.0\EN TETO.pdb
+D:\OpenUtau\EN TETO\bin\Debug\net8.0\OpenUtau.Core.dll
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.csproj.AssemblyReference.cache
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN_TETO.Data.Resources.resources
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.csproj.GenerateResource.cache
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.GeneratedMSBuildEditorConfig.editorconfig
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.AssemblyInfoInputs.cache
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.AssemblyInfo.cs
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.csproj.CoreCompileInputs.cache
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.sourcelink.json
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.csproj.Up2Date
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.dll
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\refint\EN TETO.dll
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\EN TETO.pdb
+D:\OpenUtau\EN TETO\obj\Debug\net8.0\ref\EN TETO.dll

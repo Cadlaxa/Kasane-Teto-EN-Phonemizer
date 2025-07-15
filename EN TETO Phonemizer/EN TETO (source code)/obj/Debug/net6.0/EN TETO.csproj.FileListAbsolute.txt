@@ -13,8 +13,9 @@ D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.GeneratedMSBuildEditorConfig.editor
 D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.AssemblyInfoInputs.cache
 D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.AssemblyInfo.cs
 D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.csproj.CoreCompileInputs.cache
-D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.csproj.CopyComplete
 D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.dll
 D:\OpenUtau\EN TETO\obj\Debug\net6.0\refint\EN TETO.dll
 D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.pdb
 D:\OpenUtau\EN TETO\obj\Debug\net6.0\ref\EN TETO.dll
+D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.sourcelink.json
+D:\OpenUtau\EN TETO\obj\Debug\net6.0\EN TETO.csproj.Up2Date

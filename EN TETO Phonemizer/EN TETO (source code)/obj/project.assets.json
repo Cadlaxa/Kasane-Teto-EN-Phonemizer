@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net8.0": {
       "AsyncIO/0.1.69": {
         "type": "package",
         "compile": {
@@ -27,33 +27,51 @@
           "lib/netstandard2.0/NAudio.Flac.dll": {}
         }
       },
-      "Concentus/1.1.7": {
+      "Concentus/2.2.1": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.0"
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0"
         },
         "compile": {
-          "lib/netstandard1.0/Concentus.dll": {
-            "related": ".pdb;.XML"
+          "lib/net8.0/Concentus.dll": {
+            "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard1.0/Concentus.dll": {
-            "related": ".pdb;.XML"
+          "lib/net8.0/Concentus.dll": {
+            "related": ".xml"
           }
         }
       },
-      "Concentus.Oggfile/1.0.4": {
+      "Concentus.Oggfile/1.0.6": {
         "type": "package",
         "dependencies": {
-          "Concentus": "1.1.7",
-          "NETStandard.Library": "1.6.1"
+          "Concentus": "2.2.1"
         },
         "compile": {
-          "lib/netstandard1.0/Concentus.Oggfile.dll": {}
+          "lib/net8.0/Concentus.Oggfile.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/Concentus.Oggfile.dll": {}
+          "lib/net8.0/Concentus.Oggfile.dll": {}
+        }
+      },
+      "csharp-kana/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Kana.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Kana.dll": {}
+        }
+      },
+      "csharp-pinyin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Pinyin.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Pinyin.dll": {}
         }
       },
       "Ignore/0.1.50": {
@@ -63,15 +81,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Ignore.dll": {}
-        }
-      },
-      "IkG2p/1.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net6/IkG2p.dll": {}
-        },
-        "runtime": {
-          "lib/net6/IkG2p.dll": {}
         }
       },
       "K4os.Hash.xxHash/1.0.8": {
@@ -87,7 +96,7 @@
           }
         }
       },
-      "Melanchall.DryWetMidi/7.0.2": {
+      "Melanchall.DryWetMidi/7.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Melanchall.DryWetMidi.dll": {
@@ -103,7 +112,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.AI.DirectML/1.12.0": {
+      "Microsoft.AI.DirectML/1.12.1": {
         "type": "package",
         "build": {
           "build/_._": {}
@@ -135,11 +144,11 @@
           }
         }
       },
-      "Microsoft.ML.OnnxRuntime.DirectML/1.15.0": {
+      "Microsoft.ML.OnnxRuntime.DirectML/1.16.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AI.DirectML": "1.12.0",
-          "Microsoft.ML.OnnxRuntime.Managed": "1.15.0"
+          "Microsoft.AI.DirectML": "1.12.1",
+          "Microsoft.ML.OnnxRuntime.Managed": "1.16.3"
         },
         "build": {
           "build/netstandard2.0/_._": {}
@@ -179,10 +188,10 @@
           }
         }
       },
-      "Microsoft.ML.OnnxRuntime.Managed/1.15.0": {
+      "Microsoft.ML.OnnxRuntime.Managed/1.16.3": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.3"
+          "System.Memory": "4.5.5"
         },
         "compile": {
           "lib/net6.0/Microsoft.ML.OnnxRuntime.dll": {
@@ -739,29 +748,33 @@
           }
         }
       },
-      "Serilog/3.1.1": {
+      "Serilog/4.1.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Serilog.dll": {
+          "lib/net8.0/Serilog.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Serilog.dll": {
+          "lib/net8.0/Serilog.dll": {
             "related": ".xml"
           }
         }
       },
-      "SharpCompress/0.36.0": {
+      "SharpCompress/0.38.0": {
         "type": "package",
         "dependencies": {
-          "ZstdSharp.Port": "0.7.4"
+          "ZstdSharp.Port": "0.8.1"
         },
         "compile": {
-          "lib/net6.0/SharpCompress.dll": {}
+          "lib/net8.0/SharpCompress.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/net6.0/SharpCompress.dll": {}
+          "lib/net8.0/SharpCompress.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "SharpGen.Runtime/2.0.0-beta.13": {
@@ -770,10 +783,10 @@
           "PolySharp": "1.10.0"
         },
         "compile": {
-          "lib/net6.0/SharpGen.Runtime.dll": {}
+          "lib/net7.0/SharpGen.Runtime.dll": {}
         },
         "runtime": {
-          "lib/net6.0/SharpGen.Runtime.dll": {}
+          "lib/net7.0/SharpGen.Runtime.dll": {}
         },
         "build": {
           "build/_._": {}
@@ -789,10 +802,10 @@
           "SharpGen.Runtime": "2.0.0-beta.13"
         },
         "compile": {
-          "lib/net6.0/SharpGen.Runtime.COM.dll": {}
+          "lib/net7.0/SharpGen.Runtime.COM.dll": {}
         },
         "runtime": {
-          "lib/net6.0/SharpGen.Runtime.COM.dll": {}
+          "lib/net7.0/SharpGen.Runtime.COM.dll": {}
         },
         "build": {
           "build/_._": {}
@@ -815,13 +828,13 @@
           "lib/netstandard1.6/System.AppContext.dll": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.6.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -1143,20 +1156,36 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.Packaging/7.0.0": {
+      "System.IO.Packaging/9.0.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.IO.Packaging.dll": {
+          "lib/net8.0/System.IO.Packaging.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.IO.Packaging.dll": {
+          "lib/net8.0/System.IO.Packaging.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.IO.Pipelines/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "System.Linq/4.3.0": {
@@ -1207,7 +1236,7 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -1974,6 +2003,48 @@
           }
         }
       },
+      "System.Text.Encodings.Web/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
+            "assetType": "runtime",
+            "rid": "browser"
+          }
+        }
+      },
+      "System.Text.Json/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "9.0.2",
+          "System.Text.Encodings.Web": "9.0.2"
+        },
+        "compile": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2150,12 +2221,12 @@
           "Vortice.Mathematics": "1.4.25"
         },
         "compile": {
-          "lib/net6.0/Vortice.DirectX.dll": {
+          "lib/net7.0/Vortice.DirectX.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Vortice.DirectX.dll": {
+          "lib/net7.0/Vortice.DirectX.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -2194,12 +2265,12 @@
       "Vortice.Mathematics/1.4.25": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Vortice.Mathematics.dll": {
+          "lib/net7.0/Vortice.Mathematics.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Vortice.Mathematics.dll": {
+          "lib/net7.0/Vortice.Mathematics.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -2216,23 +2287,23 @@
       "YamlDotNet/15.1.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/YamlDotNet.dll": {
+          "lib/net8.0/YamlDotNet.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/YamlDotNet.dll": {
+          "lib/net8.0/YamlDotNet.dll": {
             "related": ".xml"
           }
         }
       },
-      "ZstdSharp.Port/0.7.4": {
+      "ZstdSharp.Port/0.8.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/ZstdSharp.dll": {}
+          "lib/net8.0/ZstdSharp.dll": {}
         },
         "runtime": {
-          "lib/net6.0/ZstdSharp.dll": {}
+          "lib/net8.0/ZstdSharp.dll": {}
         }
       },
       "OpenUtau.Core/1.0.0": {
@@ -2240,12 +2311,11 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "BunLabs.NAudio.Flac": "2.0.1",
-          "Concentus.OggFile": "1.0.4",
+          "Concentus.OggFile": "1.0.6",
           "Ignore": "0.1.50",
-          "IkG2p": "1.0.5",
           "K4os.Hash.xxHash": "1.0.8",
-          "Melanchall.DryWetMidi": "7.0.2",
-          "Microsoft.ML.OnnxRuntime.DirectML": "1.15.0",
+          "Melanchall.DryWetMidi": "7.2.0",
+          "Microsoft.ML.OnnxRuntime.DirectML": "1.16.3",
           "NAudio": "2.2.1",
           "NAudio.Core": "2.2.1",
           "NAudio.Vorbis": "1.5.0",
@@ -2254,34 +2324,24 @@
           "NetMQ": "4.0.1.13",
           "Newtonsoft.Json": "13.0.3",
           "NumSharp": "0.30.0",
-          "Serilog": "3.1.1",
-          "SharpCompress": "0.36.0",
-          "System.Buffers": "4.5.1",
+          "Serilog": "4.1.0",
+          "SharpCompress": "0.38.0",
+          "System.Buffers": "4.6.0",
           "System.ComponentModel.Annotations": "5.0.0",
-          "System.IO.Packaging": "7.0.0",
+          "System.IO.Packaging": "9.0.2",
+          "System.Text.Json": "9.0.2",
           "UTF.Unknown": "2.5.1",
           "Vortice.DXGI": "2.4.2",
           "WanaKana-net": "1.0.0",
-          "YamlDotNet": "15.1.2"
+          "YamlDotNet": "15.1.2",
+          "csharp-kana": "1.0.1",
+          "csharp-pinyin": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OpenUtau.Core.dll": {}
         },
         "runtime": {
           "bin/placeholder/OpenUtau.Core.dll": {}
-        }
-      },
-      "OpenUtau.Plugin.Builtin/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "dependencies": {
-          "OpenUtau.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/OpenUtau.Plugin.Builtin.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OpenUtau.Plugin.Builtin.dll": {}
         }
       }
     }
@@ -2316,35 +2376,71 @@
         "lib/netstandard2.0/NAudio.Flac.dll"
       ]
     },
-    "Concentus/1.1.7": {
-      "sha512": "cfVhAuVDkResrGXMC9eAFh5OlGuFhU0wohzGKpQw+sWdhVjSBuS+BVTmk7JnxcJq+ErESz6OErzL0cS2lqtAlA==",
+    "Concentus/2.2.1": {
+      "sha512": "sgNsQ7f2HZ2c7hz9Sj/9LVyRrQerGoq6Wx8BoKW3XpQ7vPXjHIe9FxQwG6rg0TdVL8KOICjE2DQDk/FkVwZm4g==",
       "type": "package",
-      "path": "concentus/1.1.7",
+      "path": "concentus/2.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Readme.txt",
-        "concentus.1.1.7.nupkg.sha512",
+        "LICENSE",
+        "concentus.2.2.1.nupkg.sha512",
         "concentus.nuspec",
-        "lib/netstandard1.0/Concentus.XML",
-        "lib/netstandard1.0/Concentus.dll",
-        "lib/netstandard1.0/Concentus.pdb",
-        "lib/portable-net45+win+wpa81+wp80/Concentus.XML",
-        "lib/portable-net45+win+wpa81+wp80/Concentus.dll",
-        "lib/portable-net45+win+wpa81+wp80/Concentus.pdb"
+        "icon.png",
+        "lib/net452/Concentus.dll",
+        "lib/net452/Concentus.xml",
+        "lib/net8.0/Concentus.dll",
+        "lib/net8.0/Concentus.xml",
+        "lib/netstandard1.1/Concentus.dll",
+        "lib/netstandard1.1/Concentus.xml",
+        "lib/netstandard2.0/Concentus.dll",
+        "lib/netstandard2.0/Concentus.xml"
       ]
     },
-    "Concentus.Oggfile/1.0.4": {
-      "sha512": "l9Didb03mXV52I4lxTfHwkKxjw4hUCsWvcvz7SINa75QqJYjlUNvuEASnU9wCX2G2aoYhxfbAntfKPcwJnR4rA==",
+    "Concentus.Oggfile/1.0.6": {
+      "sha512": "bDd8vP5+cmXR7D93w3LP75sJTClTb8GLOnSaLGtjb9z+wTQ//6UfNo0mtGU5Vtpgf9nYYgn7pFbPAC6isaewyw==",
       "type": "package",
-      "path": "concentus.oggfile/1.0.4",
+      "path": "concentus.oggfile/1.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "concentus.oggfile.1.0.4.nupkg.sha512",
+        "concentus.oggfile.1.0.6.nupkg.sha512",
         "concentus.oggfile.nuspec",
-        "lib/net45/Concentus.Oggfile.dll",
-        "lib/netstandard1.0/Concentus.Oggfile.dll"
+        "icon.png",
+        "lib/net452/Concentus.Oggfile.dll",
+        "lib/net8.0/Concentus.Oggfile.dll",
+        "lib/netstandard1.1/Concentus.Oggfile.dll",
+        "lib/netstandard2.0/Concentus.Oggfile.dll"
+      ]
+    },
+    "csharp-kana/1.0.1": {
+      "sha512": "0/Di80GBy6k2TLWOEKP9DXqVX+ZJVXJOg+B5ZGH4UqtvhaSW9FWAtw+22YUmTYf0Fd8GVFTJVQsgR2SY4xMpdg==",
+      "type": "package",
+      "path": "csharp-kana/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csharp-kana.1.0.1.nupkg.sha512",
+        "csharp-kana.nuspec",
+        "lib/LICENSE",
+        "lib/README.md",
+        "lib/net6.0/Kana.dll",
+        "lib/netstandard2.1/Kana.dll"
+      ]
+    },
+    "csharp-pinyin/1.0.0": {
+      "sha512": "9cgf08SfATaRJ+YgdZcEFTq5ZpER6ci7CITvYfdT4FKv9Kdnk0xWdn0pKyrr42wPJlAgEiw6Mx17+oSK/I0YQQ==",
+      "type": "package",
+      "path": "csharp-pinyin/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csharp-pinyin.1.0.0.nupkg.sha512",
+        "csharp-pinyin.nuspec",
+        "lib/LICENSE",
+        "lib/README.md",
+        "lib/net6.0/Pinyin.dll",
+        "lib/netstandard2.1/Pinyin.dll"
       ]
     },
     "Ignore/0.1.50": {
@@ -2357,19 +2453,6 @@
         "ignore.0.1.50.nupkg.sha512",
         "ignore.nuspec",
         "lib/netstandard2.0/Ignore.dll"
-      ]
-    },
-    "IkG2p/1.0.5": {
-      "sha512": "Ra1nDn4kkh56csnBppnLyMbSVmk1KQWxslM/uCyqVWxyqIxqGl1/fZmTMP7ivvRnz/KgIOmu9ISQw71GxzwLxQ==",
-      "type": "package",
-      "path": "ikg2p/1.0.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ikg2p.1.0.5.nupkg.sha512",
-        "ikg2p.nuspec",
-        "lib/net6/IkG2p.dll",
-        "lib/netstandard2.1/IkG2p.dll"
       ]
     },
     "K4os.Hash.xxHash/1.0.8": {
@@ -2393,10 +2476,10 @@
         "lib/netstandard2.1/K4os.Hash.xxHash.xml"
       ]
     },
-    "Melanchall.DryWetMidi/7.0.2": {
-      "sha512": "4ng6s1hXPtFOeYOwl575SRAlQ51UFuGXQ4SgB4P8F9hkYuxHAbtIO5RaGzjSJOT7is3ut5prBB89Il4U1BCqhg==",
+    "Melanchall.DryWetMidi/7.2.0": {
+      "sha512": "iSD5vQtWqte5yq745x7WCY+HVhaQH4jt9Usf/3d3rDDf7uL7zJZNbJfSkF83XNQagc5io5NFAAQVm2EuI4CGWQ==",
       "type": "package",
-      "path": "melanchall.drywetmidi/7.0.2",
+      "path": "melanchall.drywetmidi/7.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2410,14 +2493,14 @@
         "lib/net45/Melanchall.DryWetMidi.xml",
         "lib/netstandard2.0/Melanchall.DryWetMidi.dll",
         "lib/netstandard2.0/Melanchall.DryWetMidi.xml",
-        "melanchall.drywetmidi.7.0.2.nupkg.sha512",
+        "melanchall.drywetmidi.7.2.0.nupkg.sha512",
         "melanchall.drywetmidi.nuspec"
       ]
     },
-    "Microsoft.AI.DirectML/1.12.0": {
-      "sha512": "GvexdRa11PYxzb3vU/U7stc/dpx4SDQ/A8q/mQfba9LHdxx3nQSKzArq1YWUzEZPQ3+j5AZkpJuybWa0oo1EnQ==",
+    "Microsoft.AI.DirectML/1.12.1": {
+      "sha512": "cmOKA3RSvmfgfmQ+WSlinlsLgZ747EzkXZAOK8Jh68KNXReA2KoRUQuU4IcSg3ts3vL+1L71EgRH7cbsxVcQuw==",
       "type": "package",
-      "path": "microsoft.ai.directml/1.12.0",
+      "path": "microsoft.ai.directml/1.12.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2466,7 +2549,7 @@
         "build/Microsoft.AI.DirectML.targets",
         "include/DirectML.h",
         "include/DirectMLConfig.h",
-        "microsoft.ai.directml.1.12.0.nupkg.sha512",
+        "microsoft.ai.directml.1.12.1.nupkg.sha512",
         "microsoft.ai.directml.nuspec"
       ]
     },
@@ -2511,16 +2594,17 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.ML.OnnxRuntime.DirectML/1.15.0": {
-      "sha512": "pxnjCX28WnFqgZ1ZPQhJ4qYOq1edNt1QXqrYGem3fRuwy1sy0pALR1pf8AwoInnUkJhYEp7aXm0q2C1LY35nUw==",
+    "Microsoft.ML.OnnxRuntime.DirectML/1.16.3": {
+      "sha512": "dPdcWgktyVU3/VPmxy528zjqhDSTgFjuf5FqjWfvWAbvIxN0J8iBUrpfR1GO/KQ3Vpf707iWaGOVIxWF8yJkyw==",
       "type": "package",
-      "path": "microsoft.ml.onnxruntime.directml/1.15.0",
+      "path": "microsoft.ml.onnxruntime.directml/1.16.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.txt",
+        "LICENSE",
         "ORT_icon_for_light_bg.png",
         "Privacy.md",
+        "README.md",
         "ThirdPartyNotices.txt",
         "build/native/Microsoft.ML.OnnxRuntime.DirectML.props",
         "build/native/Microsoft.ML.OnnxRuntime.DirectML.targets",
@@ -2529,6 +2613,8 @@
         "build/native/include/onnxruntime_c_api.h",
         "build/native/include/onnxruntime_cxx_api.h",
         "build/native/include/onnxruntime_cxx_inline.h",
+        "build/native/include/onnxruntime_float16.h",
+        "build/native/include/onnxruntime_lite_custom_op.h",
         "build/native/include/onnxruntime_run_options_config_keys.h",
         "build/native/include/onnxruntime_session_options_config_keys.h",
         "build/native/include/provider_options.h",
@@ -2536,7 +2622,7 @@
         "build/netstandard1.1/Microsoft.ML.OnnxRuntime.DirectML.targets",
         "build/netstandard2.0/Microsoft.ML.OnnxRuntime.DirectML.props",
         "build/netstandard2.0/Microsoft.ML.OnnxRuntime.DirectML.targets",
-        "microsoft.ml.onnxruntime.directml.1.15.0.nupkg.sha512",
+        "microsoft.ml.onnxruntime.directml.1.16.3.nupkg.sha512",
         "microsoft.ml.onnxruntime.directml.nuspec",
         "runtimes/win-arm/native/onnxruntime.dll",
         "runtimes/win-arm/native/onnxruntime.lib",
@@ -2548,10 +2634,10 @@
         "runtimes/win-x86/native/onnxruntime.lib"
       ]
     },
-    "Microsoft.ML.OnnxRuntime.Managed/1.15.0": {
-      "sha512": "4ole6DQoFs9QImUNIWEBXpP2XVaJrFFcRt6znVdJfna2dWmoJcAi7anqz60H5fu5B6V7BGJTfnNSeDWz/kj47w==",
+    "Microsoft.ML.OnnxRuntime.Managed/1.16.3": {
+      "sha512": "w4uDtHgBvOQyJT51SndFZK2UiW7o4ecZOYFtvClJL0AqWXVtFGQBTA77Peb17AS1xMkjYoHV4uVyJRqEZYxZ3w==",
       "type": "package",
-      "path": "microsoft.ml.onnxruntime.managed/1.15.0",
+      "path": "microsoft.ml.onnxruntime.managed/1.16.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2559,12 +2645,9 @@
         "ORT_icon_for_light_bg.png",
         "Privacy.md",
         "ThirdPartyNotices.txt",
-        "build/netstandard1.1/Microsoft.ML.OnnxRuntime.Managed.targets",
         "build/netstandard2.0/Microsoft.ML.OnnxRuntime.Managed.targets",
         "lib/monoandroid11.0/Microsoft.ML.OnnxRuntime.dll",
         "lib/monoandroid11.0/Microsoft.ML.OnnxRuntime.pdb",
-        "lib/net5.0/Microsoft.ML.OnnxRuntime.dll",
-        "lib/net5.0/Microsoft.ML.OnnxRuntime.pdb",
         "lib/net6.0-android31.0/Microsoft.ML.OnnxRuntime.dll",
         "lib/net6.0-android31.0/Microsoft.ML.OnnxRuntime.pdb",
         "lib/net6.0-android31.0/Microsoft.ML.OnnxRuntime.xml",
@@ -2576,13 +2659,11 @@
         "lib/net6.0/Microsoft.ML.OnnxRuntime.pdb",
         "lib/netcoreapp3.1/Microsoft.ML.OnnxRuntime.dll",
         "lib/netcoreapp3.1/Microsoft.ML.OnnxRuntime.pdb",
-        "lib/netstandard1.1/Microsoft.ML.OnnxRuntime.dll",
-        "lib/netstandard1.1/Microsoft.ML.OnnxRuntime.pdb",
         "lib/netstandard2.0/Microsoft.ML.OnnxRuntime.dll",
         "lib/netstandard2.0/Microsoft.ML.OnnxRuntime.pdb",
         "lib/xamarinios10/Microsoft.ML.OnnxRuntime.dll",
         "lib/xamarinios10/Microsoft.ML.OnnxRuntime.pdb",
-        "microsoft.ml.onnxruntime.managed.1.15.0.nupkg.sha512",
+        "microsoft.ml.onnxruntime.managed.1.16.3.nupkg.sha512",
         "microsoft.ml.onnxruntime.managed.nuspec"
       ]
     },
@@ -3236,10 +3317,10 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Serilog/3.1.1": {
-      "sha512": "P6G4/4Kt9bT635bhuwdXlJ2SCqqn2nhh4gqFqQueCOr9bK/e7W9ll/IoX1Ter948cV2Z/5+5v8pAfJYUISY03A==",
+    "Serilog/4.1.0": {
+      "sha512": "u1aZI8HZ62LWlq5dZLFwm6jMax/sUwnWZSw5lkPsCt518cJBxFKoNmc7oSxe5aA5BgSkzy9rzwFGR/i/acnSPw==",
       "type": "package",
-      "path": "serilog/3.1.1",
+      "path": "serilog/4.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3249,34 +3330,35 @@
         "lib/net462/Serilog.xml",
         "lib/net471/Serilog.dll",
         "lib/net471/Serilog.xml",
-        "lib/net5.0/Serilog.dll",
-        "lib/net5.0/Serilog.xml",
         "lib/net6.0/Serilog.dll",
         "lib/net6.0/Serilog.xml",
-        "lib/net7.0/Serilog.dll",
-        "lib/net7.0/Serilog.xml",
+        "lib/net8.0/Serilog.dll",
+        "lib/net8.0/Serilog.xml",
         "lib/netstandard2.0/Serilog.dll",
         "lib/netstandard2.0/Serilog.xml",
-        "lib/netstandard2.1/Serilog.dll",
-        "lib/netstandard2.1/Serilog.xml",
-        "serilog.3.1.1.nupkg.sha512",
+        "serilog.4.1.0.nupkg.sha512",
         "serilog.nuspec"
       ]
     },
-    "SharpCompress/0.36.0": {
-      "sha512": "48am//T6Ou+GmyPmBaxaFN1ym0VNidRcBeANr9+OYTzpKRz8QMGzAkHVkCV30lFQ/gnWqGr50AuebahpG1C6xA==",
+    "SharpCompress/0.38.0": {
+      "sha512": "8i6KqjAFI3mvya8W8rnQrf5h4vz6ilw4zqk2AzInVqqqZ25TD6fmVeYBnlisjTWwP26eltZc0buSmJ8a3YIGxg==",
       "type": "package",
-      "path": "sharpcompress/0.36.0",
+      "path": "sharpcompress/0.38.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
         "lib/net462/SharpCompress.dll",
+        "lib/net462/SharpCompress.pdb",
         "lib/net6.0/SharpCompress.dll",
-        "lib/net7.0/SharpCompress.dll",
+        "lib/net6.0/SharpCompress.pdb",
         "lib/net8.0/SharpCompress.dll",
+        "lib/net8.0/SharpCompress.pdb",
         "lib/netstandard2.0/SharpCompress.dll",
+        "lib/netstandard2.0/SharpCompress.pdb",
         "lib/netstandard2.1/SharpCompress.dll",
-        "sharpcompress.0.36.0.nupkg.sha512",
+        "lib/netstandard2.1/SharpCompress.pdb",
+        "sharpcompress.0.38.0.nupkg.sha512",
         "sharpcompress.nuspec"
       ]
     },
@@ -3377,35 +3459,24 @@
         "system.appcontext.nuspec"
       ]
     },
-    "System.Buffers/4.5.1": {
-      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+    "System.Buffers/4.6.0": {
+      "sha512": "lN6tZi7Q46zFzAbRYXTIvfXcyvQQgxnY7Xm6C6xQ9784dEL1amjM6S6Iw4ZpsvesAKnRVsM4scrDQaDqSClkjA==",
       "type": "package",
-      "path": "system.buffers/4.5.1",
+      "path": "system.buffers/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Buffers.dll",
-        "lib/net461/System.Buffers.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.1/System.Buffers.dll",
-        "lib/netstandard1.1/System.Buffers.xml",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Buffers.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/System.Buffers.dll",
+        "lib/net462/System.Buffers.xml",
+        "lib/netcoreapp2.1/_._",
         "lib/netstandard2.0/System.Buffers.dll",
         "lib/netstandard2.0/System.Buffers.xml",
-        "lib/uap10.0.16299/_._",
-        "ref/net45/System.Buffers.dll",
-        "ref/net45/System.Buffers.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.1/System.Buffers.dll",
-        "ref/netstandard1.1/System.Buffers.xml",
-        "ref/netstandard2.0/System.Buffers.dll",
-        "ref/netstandard2.0/System.Buffers.xml",
-        "ref/uap10.0.16299/_._",
-        "system.buffers.4.5.1.nupkg.sha512",
-        "system.buffers.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.buffers.4.6.0.nupkg.sha512",
+        "system.buffers.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -4385,10 +4456,10 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.IO.Packaging/7.0.0": {
-      "sha512": "+j5ezLP7785/pd4taKQhXAWsymsIW2nTnE/U3/jpGZzcJx5lip6qkj6UrxSE7ZYZfL0GaLuymwGLqwJV/c7O7Q==",
+    "System.IO.Packaging/9.0.2": {
+      "sha512": "dzRtKmBz7rv9mp/45YSgnRclL7+gbRBxA9qMT5xxsTlhceMnwztuHSZZhoVdKdnw6CwwEJxocPiddnr7f9xK3Q==",
       "type": "package",
-      "path": "system.io.packaging/7.0.0",
+      "path": "system.io.packaging/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4397,18 +4468,46 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.IO.Packaging.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.IO.Packaging.targets",
         "lib/net462/System.IO.Packaging.dll",
         "lib/net462/System.IO.Packaging.xml",
-        "lib/net6.0/System.IO.Packaging.dll",
-        "lib/net6.0/System.IO.Packaging.xml",
-        "lib/net7.0/System.IO.Packaging.dll",
-        "lib/net7.0/System.IO.Packaging.xml",
+        "lib/net8.0/System.IO.Packaging.dll",
+        "lib/net8.0/System.IO.Packaging.xml",
+        "lib/net9.0/System.IO.Packaging.dll",
+        "lib/net9.0/System.IO.Packaging.xml",
         "lib/netstandard2.0/System.IO.Packaging.dll",
         "lib/netstandard2.0/System.IO.Packaging.xml",
-        "system.io.packaging.7.0.0.nupkg.sha512",
+        "system.io.packaging.9.0.2.nupkg.sha512",
         "system.io.packaging.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.IO.Pipelines/9.0.2": {
+      "sha512": "UIBaK7c/A3FyQxmX/747xw4rCUkm1BhNiVU617U5jweNJssNjLJkPUGhBsrlDG0BpKWCYKsncD+Kqpy4KmvZZQ==",
+      "type": "package",
+      "path": "system.io.pipelines/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Pipelines.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "lib/net462/System.IO.Pipelines.dll",
+        "lib/net462/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
+        "lib/net9.0/System.IO.Pipelines.dll",
+        "lib/net9.0/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.9.0.2.nupkg.sha512",
+        "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -4568,10 +4667,10 @@
         "system.linq.expressions.nuspec"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
-      "path": "system.memory/4.5.4",
+      "path": "system.memory/4.5.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4585,7 +4684,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.4.5.5.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -6520,6 +6619,109 @@
         "system.text.encoding.extensions.nuspec"
       ]
     },
+    "System.Text.Encodings.Web/9.0.2": {
+      "sha512": "/kCGdrXg0PXrvkHYyHubXJHcmCAvJrxTZ7g4XS6UCxY1JW79aMjtUW6UYNECHJmiyFZsZ/vUuWOM4CtNpiNt8Q==",
+      "type": "package",
+      "path": "system.text.encodings.web/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Text.Encodings.Web.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
+        "lib/net462/System.Text.Encodings.Web.dll",
+        "lib/net462/System.Text.Encodings.Web.xml",
+        "lib/net8.0/System.Text.Encodings.Web.dll",
+        "lib/net8.0/System.Text.Encodings.Web.xml",
+        "lib/net9.0/System.Text.Encodings.Web.dll",
+        "lib/net9.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.9.0.2.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Json/9.0.2": {
+      "sha512": "4TY2Yokh5Xp8XHFhsY9y84yokS7B0rhkaZCXuRiKppIiKwPVH4lVSFD9EEFzRpXdBM5ZeZXD43tc2vB6njEwwQ==",
+      "type": "package",
+      "path": "system.text.json/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "buildTransitive/net461/System.Text.Json.targets",
+        "buildTransitive/net462/System.Text.Json.targets",
+        "buildTransitive/net8.0/System.Text.Json.targets",
+        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
+        "buildTransitive/netstandard2.0/System.Text.Json.targets",
+        "lib/net462/System.Text.Json.dll",
+        "lib/net462/System.Text.Json.xml",
+        "lib/net8.0/System.Text.Json.dll",
+        "lib/net8.0/System.Text.Json.xml",
+        "lib/net9.0/System.Text.Json.dll",
+        "lib/net9.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.9.0.2.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Text.RegularExpressions/4.3.0": {
       "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
       "type": "package",
@@ -7149,10 +7351,10 @@
         "yamldotnet.nuspec"
       ]
     },
-    "ZstdSharp.Port/0.7.4": {
-      "sha512": "ziptnotpUJr51afwXJQ5Wc03dvDiZAdmxS08s1g7SHn/VzbyZUXdH6yORk/zaNjzUOEE6pVZ0Nqztab0rYROgQ==",
+    "ZstdSharp.Port/0.8.1": {
+      "sha512": "19tNz33kn2EkyViFXuxfVn338UJaRmkwBphVqP2dVJIYQUQgFrgG5h061mxkRRg1Ax6r+6WOj1FxaFZ5qaWqqg==",
       "type": "package",
-      "path": "zstdsharp.port/0.7.4",
+      "path": "zstdsharp.port/0.8.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7164,7 +7366,7 @@
         "lib/netcoreapp3.1/ZstdSharp.dll",
         "lib/netstandard2.0/ZstdSharp.dll",
         "lib/netstandard2.1/ZstdSharp.dll",
-        "zstdsharp.port.0.7.4.nupkg.sha512",
+        "zstdsharp.port.0.8.1.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
     },
@@ -7172,17 +7374,11 @@
       "type": "project",
       "path": "../OpenUtau.Core/OpenUtau.Core.csproj",
       "msbuildProject": "../OpenUtau.Core/OpenUtau.Core.csproj"
-    },
-    "OpenUtau.Plugin.Builtin/1.0.0": {
-      "type": "project",
-      "path": "../OpenUtau.Plugin.Builtin/OpenUtau.Plugin.Builtin.csproj",
-      "msbuildProject": "../OpenUtau.Plugin.Builtin/OpenUtau.Plugin.Builtin.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "OpenUtau.Core >= 1.0.0",
-      "OpenUtau.Plugin.Builtin >= 1.0.0"
+    "net8.0": [
+      "OpenUtau.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7202,21 +7398,18 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
             "D:\\OpenUtau\\OpenUtau.Core\\OpenUtau.Core.csproj": {
               "projectPath": "D:\\OpenUtau\\OpenUtau.Core\\OpenUtau.Core.csproj"
-            },
-            "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\OpenUtau.Plugin.Builtin.csproj": {
-              "projectPath": "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\OpenUtau.Plugin.Builtin.csproj"
             }
           }
         }
@@ -7225,11 +7418,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -7246,7 +7444,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

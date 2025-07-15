@@ -18,21 +18,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
               "D:\\OpenUtau\\OpenUtau.Core\\OpenUtau.Core.csproj": {
                 "projectPath": "D:\\OpenUtau\\OpenUtau.Core\\OpenUtau.Core.csproj"
-              },
-              "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\OpenUtau.Plugin.Builtin.csproj": {
-                "projectPath": "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\OpenUtau.Plugin.Builtin.csproj"
               }
             }
           }
@@ -41,11 +38,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -62,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -96,6 +98,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -108,15 +115,11 @@
             },
             "Concentus.OggFile": {
               "target": "Package",
-              "version": "[1.0.4, )"
+              "version": "[1.0.6, )"
             },
             "Ignore": {
               "target": "Package",
               "version": "[0.1.50, )"
-            },
-            "IkG2p": {
-              "target": "Package",
-              "version": "[1.0.5, )"
             },
             "K4os.Hash.xxHash": {
               "target": "Package",
@@ -124,11 +127,11 @@
             },
             "Melanchall.DryWetMidi": {
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[7.2.0, )"
             },
             "Microsoft.ML.OnnxRuntime.DirectML": {
               "target": "Package",
-              "version": "[1.15.0, )"
+              "version": "[1.16.3, )"
             },
             "NAudio": {
               "target": "Package",
@@ -164,15 +167,15 @@
             },
             "Serilog": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[4.1.0, )"
             },
             "SharpCompress": {
               "target": "Package",
-              "version": "[0.36.0, )"
+              "version": "[0.38.0, )"
             },
             "System.Buffers": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.0, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -180,7 +183,11 @@
             },
             "System.IO.Packaging": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[9.0.2, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             },
             "UTF.Unknown": {
               "target": "Package",
@@ -197,6 +204,14 @@
             "YamlDotNet": {
               "target": "Package",
               "version": "[15.1.2, )"
+            },
+            "csharp-kana": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "csharp-pinyin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
@@ -215,66 +230,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\OpenUtau.Plugin.Builtin.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\OpenUtau.Plugin.Builtin.csproj",
-        "projectName": "OpenUtau.Plugin.Builtin",
-        "projectPath": "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\OpenUtau.Plugin.Builtin.csproj",
-        "packagesPath": "C:\\Users\\Cecil\\.nuget\\packages\\",
-        "outputPath": "D:\\OpenUtau\\OpenUtau.Plugin.Builtin\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Cecil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
-            "projectReferences": {
-              "D:\\OpenUtau\\OpenUtau.Core\\OpenUtau.Core.csproj": {
-                "projectPath": "D:\\OpenUtau\\OpenUtau.Core\\OpenUtau.Core.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
